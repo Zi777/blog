@@ -78,7 +78,7 @@ Suggestion: Align the Source with Note at the bottom left.
 
 **3.**Due to the format of raw data, after Dragging the excel file (mrsd\_2019LabourForce\_T5.xlsx) into Tableau, we can see that the imported data contains many null values as well as a lot of other information. To tidy up the dataset, we check the box in front of &quot;Use Data Interpreter&quot;. Then it will automatically exclude the unrelated data.
 
-![](4.jpg){height=60% width=20%}
+![](4.jpg){height=80% width=40%}
 
 Since the first column still contains null values and texts, thus we hide the entire column.
 ![](5.jpg)
@@ -104,11 +104,11 @@ Change the column names accordingly.
 
 **3.** Drag &quot;Labor Participation Rate&quot; into &quot;Columns&quot;, and &quot;Rank&quot; into &quot;Rows&quot;. Set &quot;Rank&quot; as discrete.
 
-![](11.jpg){height=50% width=20%}
+![](11.jpg){height=80% width=30%}
 
 **4.** Put &quot;Age Group&quot; into Marks – Label.
 
-![](12.jpg){height=50% width=20%}
+![](12.jpg){height=80% width=30%}
 
 **5.** Select &quot;Edit Table Calculation&quot; by right clicking &quot;Rank&quot;, then select &quot;Specific Dimensions&quot; in the pop-up window.
 
@@ -121,7 +121,7 @@ Change the column names accordingly.
 
 **7.** Put &quot;Age Group&quot;, &quot;Rank&quot;, and &quot;YEAR(Year)&quot; to Filters, so that we can edit filters according to our focus.
 
-![](16.jpg){height=50% width=20%}
+![](16.jpg){height=80% width=30%}
 
 **8.** Edit color of &quot;Age Group&quot;, use darker color for elder group.
 ![](17.jpg){width=50%}
@@ -132,7 +132,7 @@ Change the column names accordingly.
 
 **10.**Right click the x-axis on the right side and select &quot;Dual Axis&quot;
 
-![](19.jpg){height=50% width=25%}
+![](19.jpg){height=80% width=40%}
 
 **11.** Mark one &quot;Labor Participation Rate&quot; as Bar and another as &quot;Circle&quot;.
 ![](20.jpg){width=40%}
@@ -144,7 +144,7 @@ Change the column names accordingly.
 **13.** Adjust the position, size and color of labels to fit the view.
 
 **14.** Add reference line by right clicking the x-axis to show the average participation rate.
-![](22.jpg){height=50% width=30%}
+![](22.jpg){height=80% width=40%}
 
 **15.** Add caption to indicate the data source.
 
