@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","2.jpg","20.jpg","21.jpg","22.jpg","23.jpg","24.jpg","25.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["1.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","2.jpg","20.jpg","21.jpg","22.jpg","25.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2103,7 +2103,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>Ziqi Wang (<a href="mailto:ziqiwang.2020@mitb.smu.edu.sg">ziqiwang.2020@mitb.smu.edu.sg</a>)</p>
 <p>Data Visualization Link (Tableau Online):</p>
 <p><a href="https://public.tableau.com/profile/ziqi.wang7044#!/vizhome/Makeover1_16114043960890/LFPR?publish=yes">https://public.tableau.com/profile/ziqi.wang7044#!/vizhome/Makeover1_16114043960890/LFPR?publish=yes</a></p>
-<p><strong>1. Critiques and Suggestions for Current Visualization</strong> <img src="1.jpg" alt="alt text here" /> <strong>1.1 Clarity</strong></p>
+<p><strong>1. Critiques and Suggestions for Current Visualization</strong> <img src="1.jpg" /></p>
+<p><strong>1.1 Clarity</strong></p>
 <p><strong>a.</strong> The title of the chart does not well convey the purpose of this visualization, it could be more informative if the title includes the specific aspect that the chart reflects.</p>
 <p>Suggestion: In fact, the chart shows the percentage of labor force of each age group account for, therefore, the title can be modified to “Proportion of Resident Labor Force by Age”.</p>
 <p><strong>b.</strong> The aim of this visualization is to reflect the movement of labor force age cohort. In this case, the population is mainly grouped into “labor force aged 25 to 54” and “labor force aged 55 &amp; over”. However, this two groups cannot be obviously differentiated. Additionally, the cumulative proportion of this two age groups cannot be acquired directly from the chart.</p>
@@ -2122,29 +2123,45 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><strong>c.</strong> The Source is at the bottom center while the Note is at the bottom left, which seems not neat.</p>
 <p>Suggestion: Align the Source with Note at the bottom left.</p>
 <p><strong>2. Proposed Design of Alternative Data Visualization</strong></p>
-<p><img src="2.jpg" alt="alt text here" /> <strong>3. Data Visualization Steps</strong></p>
+<p><img src="2.jpg" /> <strong>3. Data Visualization Steps</strong></p>
 <p><strong>Data Preparation</strong></p>
-<p><strong>1.</strong> Delete the entire empty row in the raw data (mrsd_2019LabourForce_T5.xlsx), to avoid the null values in further steps. <img src="3.jpg" alt="alt text here" /></p>
+<p><strong>1.</strong> Delete the entire empty row in the raw data (mrsd_2019LabourForce_T5.xlsx), to avoid the null values in further steps.</p>
+<p><img src="3.jpg" style="width:40.0%" /></p>
 <p><strong>2.</strong> Import raw data to Tableau and select T5_T table.</p>
-<p><strong>3.</strong>Due to the format of raw data, after Dragging the excel file (mrsd_2019LabourForce_T5.xlsx) into Tableau, we can see that the imported data contains many null values as well as a lot of other information. To tidy up the dataset, we check the box in front of “Use Data Interpreter”. Then it will automatically exclude the unrelated data. <img src="4.jpg" alt="alt text here" /> Since the first column still contains null values and texts, thus we hide the entire column. <img src="5.jpg" alt="alt text here" /></p>
-<p><strong>4.</strong> Press the Ctrl key to select all column except “Age (Years)1”, then create pivot table by right clicking. <img src="6.jpg" alt="alt text here" /></p>
-<p>Change the column names accordingly. <img src="7.jpg" alt="alt text here" /></p>
+<p><strong>3.</strong>Due to the format of raw data, after Dragging the excel file (mrsd_2019LabourForce_T5.xlsx) into Tableau, we can see that the imported data contains many null values as well as a lot of other information. To tidy up the dataset, we check the box in front of “Use Data Interpreter”. Then it will automatically exclude the unrelated data.</p>
+<p><img src="4.jpg" style="width:20.0%;height:60.0%" /></p>
+<p>Since the first column still contains null values and texts, thus we hide the entire column. <img src="5.jpg" /></p>
+<p><strong>4.</strong> Press the Ctrl key to select all column except “Age (Years)1”, then create pivot table by right clicking.</p>
+<p><img src="6.jpg" style="width:40.0%" /></p>
+<p>Change the column names accordingly.</p>
+<p><img src="7.jpg" style="width:30.0%" /></p>
 <p><strong>Tableau Works</strong></p>
-<p><strong>1.</strong> Create the “Labor Participation Rate” calculation field to change the data format of “Participation Rate” into percentage. <img src="8.jpg" alt="alt text here" /></p>
-<p><strong>2.</strong> Create the “Rank” calculation field by right clicking the empty filed of “Data”. <img src="10.jpg" alt="alt text here" /></p>
-<p><strong>3.</strong> Drag “Labor Participation Rate” into “Columns”, and “Rank” into “Rows”. Set “Rank” as discrete. <img src="11.jpg" alt="alt text here" /></p>
-<p><strong>4.</strong> Put “Age Group” into Marks – Label. <img src="12.jpg" alt="alt text here" /></p>
-<p><strong>5.</strong> Select “Edit Table Calculation” by right clicking “Rank”, then select “Specific Dimensions” in the pop-up window. <img src="13.jpg" alt="alt text here" /> <img src="14.jpg" alt="alt text here" /> <strong>6.</strong> Drag “Year” into “Pages” and change the property into Year. Edit title accordingly. <img src="15.jpg" alt="alt text here" /> <img src="16.jpg" alt="alt text here" /> <img src="17.jpg" alt="alt text here" /></p>
-<p><strong>7.</strong> Put “Age Group”, “Rank”, and “YEAR(Year)” to Filters, so that we can edit filters according to our focus. <img src="18.jpg" alt="alt text here" /></p>
-<p><strong>8.</strong> Edit color of “Age Group”, use darker color for elder group. <img src="19.jpg" alt="alt text here" /></p>
-<p><strong>9.</strong> Create lollipop chart, firstly Drag “Labor Participation Rate” into “Columns”. <img src="20.jpg" alt="alt text here" /></p>
-<p><strong>10.</strong>Right click the x-axis on the right side and select “Dual Axis” <img src="21.jpg" alt="alt text here" /></p>
-<p><strong>11.</strong> Mark one “Labor Participation Rate” as Bar and another as “Circle”. <img src="22.jpg" alt="alt text here" /></p>
-<p><strong>12.</strong> Right clicking the x-axis and select “Synchronize Axis” <img src="23.jpg" alt="alt text here" /></p>
+<p><strong>1.</strong> Create the “Labor Participation Rate” calculation field to change the data format of “Participation Rate” into percentage.</p>
+<p><img src="8.jpg" style="width:30.0%" /> <img src="9.jpg" style="width:30.0%" /></p>
+<p><strong>2.</strong> Create the “Rank” calculation field by right clicking the empty filed of “Data”.</p>
+<p><img src="10.jpg" style="width:50.0%" /></p>
+<p><strong>3.</strong> Drag “Labor Participation Rate” into “Columns”, and “Rank” into “Rows”. Set “Rank” as discrete.</p>
+<p><img src="11.jpg" style="width:20.0%;height:50.0%" /></p>
+<p><strong>4.</strong> Put “Age Group” into Marks – Label.</p>
+<p><img src="12.jpg" style="width:20.0%;height:50.0%" /></p>
+<p><strong>5.</strong> Select “Edit Table Calculation” by right clicking “Rank”, then select “Specific Dimensions” in the pop-up window.</p>
+<p><img src="13.jpg" style="width:40.0%" /></p>
+<p><strong>6.</strong> Drag “Year” into “Pages” and change the property into Year. Edit title accordingly. <img src="14.jpg" style="width:40.0%" /></p>
+<p><img src="15.jpg" style="width:50.0%" /></p>
+<p><strong>7.</strong> Put “Age Group”, “Rank”, and “YEAR(Year)” to Filters, so that we can edit filters according to our focus.</p>
+<p><img src="16.jpg" style="width:20.0%;height:50.0%" /></p>
+<p><strong>8.</strong> Edit color of “Age Group”, use darker color for elder group. <img src="17.jpg" style="width:50.0%" /></p>
+<p><strong>9.</strong> Create lollipop chart, firstly Drag “Labor Participation Rate” into “Columns”.</p>
+<p><img src="18.jpg" style="width:50.0%" /></p>
+<p><strong>10.</strong>Right click the x-axis on the right side and select “Dual Axis”</p>
+<p><img src="19.jpg" style="width:25.0%;height:50.0%" /></p>
+<p><strong>11.</strong> Mark one “Labor Participation Rate” as Bar and another as “Circle”. <img src="20.jpg" style="width:40.0%" /></p>
+<p><strong>12.</strong> Right clicking the x-axis and select “Synchronize Axis”</p>
+<p><img src="21.jpg" style="width:30.0%" /></p>
 <p><strong>13.</strong> Adjust the position, size and color of labels to fit the view.</p>
-<p><strong>14.</strong> Add reference line by right clicking the x-axis to show the average participation rate. <img src="24.jpg" alt="alt text here" /></p>
+<p><strong>14.</strong> Add reference line by right clicking the x-axis to show the average participation rate. <img src="22.jpg" style="width:30.0%;height:50.0%" /></p>
 <p><strong>15.</strong> Add caption to indicate the data source.</p>
-<p><strong>4. Final Visualization Output</strong> <img src="25.jpg" alt="alt text here" /></p>
+<p><strong>4. Final Visualization Output</strong> <img src="25.jpg" /></p>
 <p><strong>5. Major Insights</strong></p>
 <p><strong>a.</strong> While selecting the year from 2009 to 2019, we can observe that the reference line shifts to the right gradually, which means the average labor force participation rate increased over the year, from 62.73% to 67.97%.</p>
 <p><strong>b.</strong> We use the light blue represents the young labor force (aged from 15-24), the azure represents the meddle-aged labor force (aged from 25-54), and the dark blue for the elder labor force (55 &amp; over). By selecting the year from 2009 to 2019, we can observe that although the labor force participation rate of the elder age cohort increased, the labor force participation rate of middle-aged labor force remained the top, which indicates that middle-aged labor force is the main composition of labor force.</p>
