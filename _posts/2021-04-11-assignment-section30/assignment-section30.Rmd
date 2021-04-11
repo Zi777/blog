@@ -24,8 +24,6 @@ Based on Shayini, S. (2017, March 24). _RPubs - Bike Sharing Data Analysis with 
 
 
 ## 3.0 Data Preparation
-### 3.1 Install Packages
-## 3.0 Data Preparation
 
 ### 3.1 Install Packages
 
@@ -125,3 +123,17 @@ glimpse(trip_data)
 
 ```
 
+## 4.0 Visualisation Preparation
+### 4.1 Visualize all the dock stations around Boston
+Before the analysis, we first visualize all the dock stations around Boston, and the dock station name will be displayed while hovering over the mouse.
+
+```{r}
+DockStation <- station %>% 
+  leaflet() %>%
+  setView(lng = -71.0589, lat = 42.3601, zoom = 13) %>% 
+  addTiles() %>%
+  addMarkers(lng = station$Longitude, 
+             lat = station$Latitude, 
+             label = ~htmlEscape(station$Name))
+DockStation
+```
