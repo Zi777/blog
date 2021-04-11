@@ -138,7 +138,14 @@ DockStation <- station %>%
 DockStation
 ```
 
+### 4.2 Dot Density  Map with Filter
+To shrink the data size and select the data according to our analyzing purpose, we add filters to the dot density map, with that we are able to visualize the changes in number of trip for each station through the day as well as difference between two types of user.
 
+```{r}
+# Make mapping color palette for numerical variables
+popularity<-tabyl(trip_data, start_name)
+cPal<-colorNumeric(palette = "YlOrRd", domain = popularity$n)
+```
 
 
 ## 5.0 Storyboard
