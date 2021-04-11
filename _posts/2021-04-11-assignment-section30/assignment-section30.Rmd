@@ -138,41 +138,7 @@ DockStation <- station %>%
 DockStation
 ```
 
-### 4.2 Dot Density  Map with Filter
-To shrink the data size and select the data according to our analyzing purpose, we add filters to the dot density map, with that we are able to visualize the changes in number of trip for each station through the day as well as difference between two types of user.
 
-```{r}
-# Make mapping color palette for numerical variables
-popularity<-tabyl(trip_data, start_name)
-cPal<-colorNumeric(palette = "YlOrRd", domain = popularity$n)
-```
-
-
-```{r}
-#starting location
-#mapping
-shared_trip<-SharedData$new(trip_data)
-bscols(widths=c(3,9),
-  list(
-    filter_checkbox("usertype", "User Type", shared_trip, ~usertype, columns = 1),
-    filter_slider("hour", "Hour of Day", shared_trip, ~hour, step=1)
-  ),
-  leaflet(shared_trip) %>%
-  setView(lng = -71.0589, lat = 42.3601, zoom = 13) %>% 
-  addTiles() %>%
-  addCircleMarkers(lng = trip_data$start_long, 
-                   lat = trip_data$start_lat,
-                   color = cPal(popularity$n),
-                   stroke = FALSE,
-                   radius = sqrt(popularity$n)/5,
-                   fillOpacity = 1,
-                   popup = paste('Station:',trip_data$start_name, '<br>',
-                           'Number of trips:',popularity$n)) %>%
-  addLegend("bottomright", pal = cPal, values = ~popularity$n,
-      title = "Number of Trip",
-      opacity = 1)
-)
-```
 
 
 ## 5.0 Storyboard
